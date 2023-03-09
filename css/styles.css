@@ -280,6 +280,7 @@ p {
 }
 
 .social-icon {
+    display: block;
     height: 40px;
     width: 40px;
     background-color: var(--color-main);
@@ -401,10 +402,10 @@ p {
     padding-bottom: 100px;
 }
 
-
-.footer-block {
-    width: 264px;
+.footer-blocks {
+    display: flex;
 }
+
 
 .logo-footer {
     color: var(--color-text-unaccent);
@@ -414,4 +415,27 @@ p {
     max-width: 264px;
     margin-top: 16px;
     color: #E7E9FC;
+
+}
+
+.footer-studio {
+    margin-right: 120px;
+}
+
+.footer-social-discription {
+    color: var(--color-alternative);
+    margin-bottom: 16px;
+}
+
+.grey-icon-footer {
+    background-color: rgba(256, 256, 256, 0.1);
+}
+
+.footer-social-block {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-social {
+    margin-right: 120px;
 }
