@@ -284,14 +284,11 @@ p {
     width: 40px;
     background-color: var(--color-main);
     border-radius: 50%;
+    padding: 12px;
 }
 
 .social-icon-pic {
     fill: var(--color-text-unaccent);
-    max-width: 100%;
-    max-height: 100%;
-    margin: 0px auto;
-
 }
 
 .team-card-social {
@@ -437,11 +434,6 @@ p {
 .footer-social-icon:hover,
 .footer-social-icon:focus {
     background-color: #31D0AA;
-}
-
-.social-footer-pic {
-    max-width: 100%;
-    max-height: 100%;
 }
 
 .footer-social-block {
