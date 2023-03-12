@@ -150,7 +150,7 @@ p {
     letter-spacing: 0.02em;
 }
 
-.nav-link:hover::after {
+.is-active::after {
     content: '';
     margin-top: 20px;
     display: block;
