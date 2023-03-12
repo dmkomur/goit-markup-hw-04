@@ -33,6 +33,7 @@ p {
     --color-text-accent: #2E2F42;
     --color-text-unaccent: #F4F4FD;
     --color-alternative: #fff;
+    --transition-type: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* common styles */
@@ -91,6 +92,9 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-type);
 }
 
 .social-icon-link:hover,
@@ -148,6 +152,9 @@ p {
     color: var(--color-text-accent);
     text-decoration: none;
     letter-spacing: 0.02em;
+    transition: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-type);
 }
 
 .is-active::after {
@@ -172,6 +179,9 @@ p {
     color: var(--color-text-accent);
     font-style: normal;
     letter-spacing: 0.02em;
+    transition: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-type);
 }
 
 .address-list {
@@ -192,6 +202,7 @@ p {
 .address-link:focus {
     color: var(--color-hover);
     outline: none;
+
 }
 
 /* hero */
@@ -229,6 +240,9 @@ p {
     height: 56px;
     border-radius: 4px;
     font-family: inherit;
+    transition: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-type);
 
 }
 
@@ -356,11 +370,17 @@ p {
     border: 1px solid #8E8F99;
     justify-content: center;
     align-items: center;
+    transition: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-type);
 
 }
 
 .custumers-icon-pic {
     fill: #8E8F99;
+    transition: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-type);
 }
 
 .custumers-icon-link:hover,
@@ -398,6 +418,9 @@ p {
     border-radius: 4px;
     border-width: 0;
     font-family: inherit;
+    transition: color, box-shadow, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-type);
 }
 
 .switcher-item:not(:last-child) {
@@ -428,6 +451,9 @@ p {
     width: 100%;
     text-decoration: none;
     color: inherit;
+    transition: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-type);
 }
 
 .portfolio-card-subscription {
