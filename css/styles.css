@@ -469,6 +469,40 @@ p {
     outline: none;
 }
 
+.card-img-hover-thomb {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img-hover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-main);
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    transition: transform;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-type);
+}
+
+
+.card-img-hover-text {
+    color: var(--color-text-unaccent);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.link-portfolio:hover .card-img-hover,
+.link-portfolio:focus .card-img-hover {
+    transform: translateY(-100%);
+}
+
 /* footer */
 .footer-section {
     background-color: var(--color-text-accent);
